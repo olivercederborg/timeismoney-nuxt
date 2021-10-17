@@ -12,7 +12,7 @@
 </script>
 
 <template>
-	<button class="px-4 py-2" :class="[variant && Variants[variant]]">
+	<button class="px-4 py-2 rounded-lg" :class="[variant && Variants[variant]]">
 		{{ props.title }}
 	</button>
 </template>
