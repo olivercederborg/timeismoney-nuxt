@@ -2,7 +2,7 @@ import { msToTime } from '@/composables/msToTime'
 import { jsPDF } from 'jspdf'
 import autoTable from 'jspdf-autotable'
 
-export const exportJson = sessions => {
+export const exportJson = (sessions: any[]) => {
 	const doc = new jsPDF('p', 'pt', 'a4', true)
 
 	let totalTime = 0

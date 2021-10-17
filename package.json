@@ -1,19 +1,20 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "start": "node .output/server/index.mjs"
-  },
-  "devDependencies": {
-    "@nuxtjs/tailwindcss": "^4.2.1",
-    "autoprefixer": "^10.3.7",
-    "nuxt3": "latest",
-    "postcss": "^8.3.9",
-    "tailwindcss": "^2.2.17"
-  },
-  "dependencies": {
-    "jspdf": "^2.4.0",
-    "jspdf-autotable": "^3.5.20"
-  }
+	"private": true,
+	"scripts": {
+		"dev": "nuxt dev",
+		"build": "nuxt build",
+		"start": "node .output/server/index.mjs",
+		"type": "module"
+	},
+	"devDependencies": {
+		"@nuxtjs/tailwindcss": "^4.2.1",
+		"autoprefixer": "^10.3.7",
+		"nuxt3": "latest",
+		"postcss": "^8.3.9",
+		"tailwindcss": "^2.2.17"
+	},
+	"dependencies": {
+		"jspdf": "^2.4.0",
+		"jspdf-autotable": "^3.5.20"
+	}
 }

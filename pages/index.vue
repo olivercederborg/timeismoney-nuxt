@@ -8,7 +8,7 @@
 	const { formattedTime, isStarted, reset, start, stop, elapsedTime } =
 		useStopWatch()
 
-	let sessions = ref([])
+	let sessions = ref<any[]>([])
 
 	onMounted(() => {
 		if (localStorage.sessions) {
@@ -78,7 +78,7 @@
 			/>
 		</section>
 
-		<table v-if="sessions" class="w-full max-w-xl mx-auto mt-20">
+		<table v-if="sessions.length" class="w-full max-w-xl mx-auto mt-20">
 			<tr class="text-left">
 				<th>Session</th>
 				<th class="text-right">Time</th>
