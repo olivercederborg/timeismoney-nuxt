@@ -11,5 +11,9 @@
     "nuxt3": "latest",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.17"
+  },
+  "dependencies": {
+    "jspdf": "^2.4.0",
+    "jspdf-autotable": "^3.5.20"
   }
 }

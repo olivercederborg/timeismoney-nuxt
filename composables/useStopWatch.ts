@@ -14,12 +14,12 @@ const useStopWatch = () => {
 		}, 10)
 	}
 
-	const pause = () => {
+	const stop = () => {
 		isStarted.value = false
 		clearInterval(timerInterval)
 	}
 
-	const stop = () => {
+	const reset = () => {
 		isStarted.value = false
 		clearInterval(timerInterval)
 		startTime.value = 0
@@ -49,7 +49,7 @@ const useStopWatch = () => {
 		}${formattedMM}:${formattedSS}:${formattedMS}`
 	})
 
-	return { formattedTime, start, pause, stop, isStarted, elapsedTime }
+	return { formattedTime, start, stop, reset, isStarted, elapsedTime }
 }
 
 export default useStopWatch
