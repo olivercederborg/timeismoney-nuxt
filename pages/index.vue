@@ -3,7 +3,7 @@
 	import { msToTime } from '@/composables/msToTime'
 	import useStopWatch from '@/composables/useStopWatch'
 
-	useMeta({ title: 'Home - Timetrackr' })
+	useMeta({ title: 'Home - TimeIsMoney' })
 
 	const { formattedTime, isStarted, reset, start, stop, elapsedTime } =
 		useStopWatch()
